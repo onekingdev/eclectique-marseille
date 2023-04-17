@@ -1,11 +1,3 @@
-/**
-* Template Name: Selecao
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -96,6 +88,12 @@ h6 {
   box-shadow: 0 0 5px grey;
 }
 
+#header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
@@ -115,6 +113,18 @@ h6 {
   padding: 0;
   margin: 0;
   max-height: 40px;
+}
+
+#header .logo p {
+  margin: 0;
+  font-size: 20px; 
+  font-family: fantasy;
+  color: #EBB845;
+}
+
+.logo-img {
+  width:40px; 
+  height: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -369,8 +379,21 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin-top: 70px;
   /* background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%); */
   padding: 0;
+}
+
+.here-title-container {
+  text-align: center; 
+  color: #EBB845;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.here-title-container .hero__title {
+  font-size: 56px; 
+  font-family: fantasy;
 }
 
 #hero .carousel-container {
@@ -381,8 +404,8 @@ h6 {
   text-align: center;
   position: relative;
   /* height: 70vh; */
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
 
 #hero h2 {
@@ -449,6 +472,24 @@ h6 {
 @media (max-width: 768px) {
   #hero .carousel-container {
     /* height: 90vh; */
+  }
+  
+  #heroCarousel {
+    padding: 0;
+  }
+
+  .here-title-container {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  
+  .here-title-container .hero__title {
+    font-size: 32px; 
+  }
+
+  #heroCarousel {
+    order: 1;
   }
 
   #hero h2 {
