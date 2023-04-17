@@ -25,6 +25,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@font-face {
+  font-family: Ultra;
+  src: url(../font/Ultra.ttf);
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -117,14 +123,20 @@ h6 {
 
 #header .logo p {
   margin: 0;
-  font-size: 20px; 
-  font-family: fantasy;
+  font-size: 22px; 
+  font-family: Ultra;
   color: #EBB845;
 }
 
 .logo-img {
   width:40px; 
   height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header .logo p {
+    font-size: 18px; 
+  }
 }
 
 /*--------------------------------------------------------------
@@ -394,6 +406,10 @@ h6 {
 .here-title-container .hero__title {
   font-size: 56px; 
   font-family: fantasy;
+}
+
+.hero__title-content {
+  font-family: Ultra;
 }
 
 #hero .carousel-container {
